@@ -1,0 +1,12 @@
+---
+- hosts: lab
+  remote_user: vagrant
+  tasks:
+    - name: test network service
+      shell: "pwd > pwd &&echo 'pwd success'"
+      args:
+        creates: /home/vagrant/pwd
+      register: out
+    - debug: var=out.stdout_lines
+      # sudo: yes
+      # remote_user: vagrant

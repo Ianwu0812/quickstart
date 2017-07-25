@@ -1,0 +1,10 @@
+---
+- hosts: lab
+  remote_user: vagrant
+  tasks:
+    - name: test network service
+      shell: "echo helloworld > hello"
+      args:
+        creates: /home/vagrant/hello
+      # sudo: yes
+      # remote_user: vagrant

@@ -1,0 +1,5 @@
+---
+- name: test connection
+  ping:
+
+# 直接將 tasks 的變數封裝成一個 yaml

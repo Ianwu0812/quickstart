@@ -1,0 +1,8 @@
+---
+- hosts: lab
+  remote_user: vagrant
+  tasks:
+    - name: test network service
+      service: name=network state=started
+      sudo: yes
+      # remote_user: vagrant

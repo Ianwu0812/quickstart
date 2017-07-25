@@ -1,0 +1,8 @@
+---
+- hosts: lab
+  remote_user: vagrant
+  tasks:
+#    - name: test connection
+#      ping:
+    - include: ./running_task.yml 
+#- include: ./running.yml 

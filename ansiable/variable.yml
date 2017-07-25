@@ -1,0 +1,10 @@
+---
+ - hosts: lab
+   tasks:
+      - name: variable test
+        shell: echo {{ ian_wu_vars }}
+        register: out
+      - debug: var=out.stdout_lines
+
+# quickstart command
+# ansible-playbook variable.yml -e "ian_wu_vars=foobar"

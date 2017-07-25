@@ -1,0 +1,8 @@
+---
+ - includes: variables_list.yml
+   vars:
+      wp_user: timmy
+      some_list_variable:
+        - alpha
+        - beta
+        - gamma

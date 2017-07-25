@@ -1,0 +1,14 @@
+---
+- hosts: lab
+  remote_user: vagrant
+  tasks:
+    - name: test network service
+      shell: echo $UID
+      args:
+         creates: /home/vagrant/no
+      # notify 要和 handlers 的 name 一致才能正確呼叫
+      notify:
+         - touch notify
+  handlers:
+    - name: touch notify
+      ping:

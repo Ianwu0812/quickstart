@@ -1,0 +1,9 @@
+---
+ - hosts: lab
+   vars_files:
+     - ./vars/external_vars.yml
+   tasks:
+     - name: test variable
+       shell: "echo {{password}}"
+       register: out
+     - debug: var=out.stdout_lines
