@@ -1,0 +1,11 @@
+---
+ - hosts: lab
+   tasks: 
+      - name: test tags
+        ping:
+        tags: install
+
+# ansible-playbook tags.yml --skip-tags install
+#    -t TAGS, --tags=TAGS
+#    --skip-tags=SKIP_TAGS  跳過指定的標籤
+#    --start-at-task=START_AT 從指定的標籤開始
