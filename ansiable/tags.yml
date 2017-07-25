@@ -9,3 +9,5 @@
 #    -t TAGS, --tags=TAGS
 #    --skip-tags=SKIP_TAGS  跳過指定的標籤
 #    --start-at-task=START_AT 從指定的標籤開始
+#    可以一次使用多個名稱相同的標籤。也可以調用不同的標籤，用 “,” 分割。
+#    可以用 ansible-playbook --list-tags [playbook] 列出標籤
