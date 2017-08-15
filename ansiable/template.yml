@@ -4,3 +4,4 @@
      - name: test template
        template: src=templates/common_template.j2 dest=/tmp/template.out
 # 不需要用 create，template 會自動監測
+# 名稱中不能含有_
